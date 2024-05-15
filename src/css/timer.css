@@ -1,0 +1,90 @@
+
+/* General styles for the input and button */
+input[type="text"] {
+    width: 272px;
+    height: 40px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  /* Button styles (normal state) */
+  button[type="button"]{
+width: 75px;
+height: 40px;
+background-color: #4E75FF;
+color: #FFFFFF;
+border-radius: 8px;
+}
+
+  /* Button styles (hover state) */
+  button[type="button"]:hover:not(:disabled) {
+    background-color: #6C8CFF;
+  }
+  
+  /* Input styles (focus state) */
+  input[type="text"]:focus {
+    outline: 2px solid #000000;
+  }
+
+  
+  /* Button styles (disabled state) */
+  button[type="button"]:disabled {
+    background-color: #CFCFCF;
+    color: #989898;
+    cursor: default; /* Not clickable */
+  }
+  
+  .timer {
+    display: flex;
+    width: 272px; 
+    border-radius: 10px; /* Add rounded corners */
+    margin-left: 10px;
+    color: #2E2F42;
+ 
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-right: 5px;
+    font-family: 'Montserrat';
+  }
+
+
+  .flatpickr-calendar {
+    /* General calendar styles */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .flatpickr-calendar .flatpickr-day {
+    /* Style for all days */
+    border: 1px solid transparent;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .flatpickr-calendar .flatpickr-day:hover {
+    /* Hover state */
+    background-color: #eee;
+  }
+  
+  .flatpickr-calendar .flatpickr-day.flatpickr-selected {
+    /* Chosen state */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+  }
+  
+  .flatpickr-calendar .flatpickr-day.flatpickr-day--today {
+    /* Today's date */
+    border: 2px solid #4CAF50; /* Green border */
+  }
+  
